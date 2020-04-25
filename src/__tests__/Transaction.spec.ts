@@ -33,7 +33,6 @@ describe('Transaction', () => {
     });
 
     const response = await request(app).get('/transactions');
-
     expect(response.body.transactions).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
